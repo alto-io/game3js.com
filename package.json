@@ -1,0 +1,41 @@
+{
+  "name": "game3.js",
+  "version": "1.0.0",
+  "description": "javascript game framework for web 3.0",
+  "main": "index.js",
+  "dependencies": {
+    "chess": "^0.4.2",
+    "react": "^16.9.0",
+    "react-chess": "^1.1.1",
+    "react-scripts": "3.1.2",
+    "react-dom": "^16.9.0"
+  },
+  "scripts": {
+    "start": "react-scripts --max_old_space_size=8192 start",
+    "build": "react-scripts --max-old-space-size=8192 build ",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polats/game3.js.git"
+  },
+  "author": "Paul Gadi <paul@alto.io> (polats.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/polats/game3.js/issues"
+  },
+  "homepage": "https://github.com/polats/game3.js#readme",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
