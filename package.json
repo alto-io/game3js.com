@@ -5,10 +5,13 @@
   "main": "index.js",
   "dependencies": {
     "chess": "^0.4.2",
+    "litegraph.js": "^0.7.2",
     "react": "^16.9.0",
     "react-chess": "^1.1.1",
-    "react-scripts": "3.1.2",
-    "react-dom": "^16.9.0"
+    "react-dnd": "^10.0.2",
+    "react-dnd-html5-backend": "^10.0.2",
+    "react-dom": "^16.9.0",
+    "react-scripts": "3.1.2"
   },
   "scripts": {
     "start": "react-scripts --max_old_space_size=8192 start",
