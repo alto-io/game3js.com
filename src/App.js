@@ -4,7 +4,7 @@ import 'litegraph.js/css/litegraph.css'
 
 const Chess = require('react-chess')
 
-require('./demo.css')
+//  require('./demo.css')
 
 function App() {
 
