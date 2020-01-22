@@ -1,10 +1,15 @@
 import React from 'react';
+import Backend from 'react-dnd-html5-backend'
+//import TouchBackend from 'react-dnd-touch-backend'
+import { DndProvider } from 'react-dnd'
+
 import LiteGraphJS from 'litegraph.js/build/litegraph.js'
 import 'litegraph.js/css/litegraph.css'
 
+
 const Chess = require('react-chess')
 
-require('./demo.css')
+// require('./demo.css')
 
 function App() {
 
@@ -67,14 +72,19 @@ function App() {
   }
 
   return (
-    <div className="demo">
-      <Chess pieces={pieces} onMovePiece={handleMovePiece} />
-    </div>
 
-    // <div id="mainCanvas" style={{position:"relative",overflow:'hidden',background:"#222",width:'100%',height:"100%"}}>
-    //   <canvas id='main' width={Math.max(100,width)} height={Math.max(100,height)} tabIndex={10} style={{background:"#111111",outline: 'none',borderBottom:'1px solid #666666'}}></canvas>
-    //   <div id="reactElements"></div>
-    // </div>
+    <DndProvider backend={Backend}>
+      <div className="demo">
+        <Chess pieces={pieces} onMovePiece={handleMovePiece} />
+      </div>
+    {/*
+      <div id="mainCanvas" style={{position:"relative",overflow:'hidden',background:"#222",width:'100%',height:"100%"}}>
+        <canvas id='main' width={Math.max(100,width)} height={Math.max(100,height)} tabIndex={10} style={{background:"#111111",outline: 'none',borderBottom:'1px solid #666666'}}></canvas>
+        <div id="reactElements"></div>
+      </div>
+    */}
+      
+    </DndProvider>
   );
 }
 
