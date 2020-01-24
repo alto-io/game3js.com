@@ -22,7 +22,8 @@ import {
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.jsx";
 
-import App from "../App";
+import ChessDemo from "components/ChessDemo";
+import Web2Graph from "components/Web2Graph";
 
 class Index extends React.Component {
   state = {};
@@ -52,18 +53,25 @@ class Index extends React.Component {
               </div>
               <Container className="py-lg-md d-flex">
                 <div className="col px-0">
-                  <Row>
-                    <Col lg="6">
+                  <Row className="row-grid align-items-center">
+                    <Col lg="4">
                       <h1 className="display-3 text-white">
                         The Web 3.0 Game Engine{" "}
-                        <span>open-source and decentralized</span>
+                        <span>Open-source & Decentralized</span>
                       </h1>
                       <p className="lead text-white">
                         Web 2.0 platforms such as social networks, app stores and
-                        ad networks have all lead to games monetizing attention.
-                        Web 3.0 will help us break free from this unsustainable attention economy.
+                        ad networks have changed the focus of games: from delighting players to monetizing their attention.
                       </p>
+                      <p className="lead text-white">
+                      Web 3.0 will help us break free from this unsustainable attention economy.
+                      </p>
+
                     </Col>
+                    <Col lg="8">
+                      <Web2Graph/>
+                    </Col>
+
                   </Row>
                 </div>
               </Container>
@@ -89,7 +97,7 @@ class Index extends React.Component {
               <Container>
                 <Row className="row-grid align-items-center">
                   <Col className="order-md-2" md="6">
-                    <App/>
+                    <ChessDemo/>
                   </Col>
                   <Col className="order-md-1" md="6">
                     <div className="pr-md-5">

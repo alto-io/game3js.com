@@ -13,11 +13,21 @@ javascript game framework for web 3.0
 ## Auto Chess Demo
   * Buy a piece as an NFT
   * Earn achievements as kudos?
+  * Defi
 
 ## What are prime examples of game3?
   * Cryptokitties = NFTs and breeding
   * Gods Unchained = CCGs
   * Land purchases = Cryptovoxels
+
+## Components
+  * Web3 Login
+  * NFTs
+  * IPFS
+  * Defi
+
+# Tools
+  * Open Economy Design Tool
 
 ## Using In A Hackathon
 [APIs for integrating with Crypto]
