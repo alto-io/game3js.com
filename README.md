@@ -29,6 +29,21 @@ javascript game framework for web 3.0
 # Tools
   * Open Economy Design Tool
 
+# Built On
+  * Litegraph.js
+  * Eth.build
+  * React
+
+# Other Open-source / Decentralized Game Dev Tools
+  * Identity Management - Portis
+  * Server - Nakama
+  * Game Engines
+    - Phaser
+ * Graphics Engines
+     - Three.js
+     - Babylon.js
+     - Pixi.js
+
 ## Using In A Hackathon
 [APIs for integrating with Crypto]
 [APIs for governance]

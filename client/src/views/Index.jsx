@@ -56,12 +56,12 @@ class Index extends React.Component {
                   <Row className="row-grid align-items-center">
                     <Col lg="4">
                       <h1 className="display-3 text-white">
-                        The Web 3.0 Game Engine{" "}
+                        The Web 3.0 Game Framework{" "}
                         <span>Open-source & Decentralized</span>
                       </h1>
                       <p className="lead text-white">
                         Web 2.0 platforms such as social networks, app stores and
-                        ad networks have changed the focus of games: from delighting players to monetizing their attention.
+                        ad networks have changed the focus of games: from delighting players, to monetizing their attention.
                       </p>
                       <p className="lead text-white">
                       Web 3.0 will help us break free from this unsustainable attention economy.

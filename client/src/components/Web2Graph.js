@@ -6,7 +6,7 @@ import { DndProvider } from 'react-dnd'
 import LiteGraphJS from 'litegraph.js/build/litegraph.js'
 import 'litegraph.js/css/litegraph.css'
 
-
+import CustomNodes from './ethbuild/CustomNodes'
 
 function Web2Graph() {
 
@@ -31,12 +31,16 @@ function Web2Graph() {
 
   React.useEffect(()=>{
 
+    global.LiteGraphJS = LiteGraphJS
     var graph = new LiteGraphJS.LGraph();
+    global.graph = graph
 
     //config
     LiteGraphJS.LiteGraph.debug = true
 
     var canvas = new LiteGraphJS.LGraphCanvas("#main", graph);
+    
+    CustomNodes(LiteGraphJS)
 
     graph.onAfterExecute = function() {
       canvas.draw(true);
