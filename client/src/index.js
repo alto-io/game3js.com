@@ -7,16 +7,24 @@ import "assets/vendor/font-awesome/css/font-awesome.min.css";
 import "assets/scss/argon-design-system-react.scss";
 
 import Index from "views/Index.jsx";
+import './index.css';
+
+import Backend from 'react-dnd-html5-backend'
+//import TouchBackend from 'react-dnd-touch-backend'
+import { DndProvider } from 'react-dnd'
 
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Switch>
-      <Route path="/" exact render={props => <Index {...props} />} />
-      <Redirect to="/" />
-    </Switch>
-  </BrowserRouter>,
+  <DndProvider backend={Backend}>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact render={props => <Index {...props} />} />
+        <Redirect to="/" />
+      </Switch>
+    </BrowserRouter>
+</DndProvider>
+  ,
   document.getElementById("root")
 );
 

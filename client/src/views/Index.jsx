@@ -23,7 +23,7 @@ import {
 import DemoNavbar from "components/Navbars/DemoNavbar.jsx";
 
 import ChessDemo from "components/ChessDemo";
-import Web2Graph from "components/Web2Graph";
+import EthBuild from "components/ethbuild";
 
 class Index extends React.Component {
   state = {};
@@ -69,7 +69,7 @@ class Index extends React.Component {
 
                     </Col>
                     <Col lg="8">
-                      <Web2Graph/>
+                      <EthBuild/>
                     </Col>
 
                   </Row>
