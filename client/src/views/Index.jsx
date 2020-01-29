@@ -60,8 +60,7 @@ class Index extends React.Component {
                         <span>Open-source & Decentralized</span>
                       </h1>
                       <p className="lead text-white">
-                        Web 2.0 platforms such as social networks, app stores and
-                        ad networks have changed the focus of games: from delighting players, to monetizing their attention.
+                        Web 2.0 platforms have changed the focus of video games: from delighting players, to monetizing their attention.
                       </p>
                       <p className="lead text-white">
                       Web 3.0 will help us break free from this unsustainable attention economy.

@@ -261,6 +261,7 @@ const hexColor = (hex)=>{
 
 
 global.customNodes = [
+  {name:"Game3",color:"41b493",icon:"🎮"},
   {name:"Input",color:"3f51b5",icon:"✏️"},
   {name:"Display",color:"357a38",icon:"🖥"},
   {name:"Storage",color:"c1790e",icon:"💾"},
