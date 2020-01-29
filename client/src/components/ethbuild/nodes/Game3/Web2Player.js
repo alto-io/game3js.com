@@ -1,3 +1,7 @@
+import React from 'react';
+import ReactDOM from 'react-dom'
+import Avatar from 'avataaars'
+
 function Web2Player() {
   this.addProperty("interval", 3000);
   this.addProperty("event", "tick");
@@ -27,6 +31,29 @@ Web2Player.prototype.onDrawBackground = function() {
   ? Web2Player.on_color
   : Web2Player.off_color;
   this.triggered = false;
+
+  if (this.flags.collapsed) {
+    this.destory()///SHOULD WE DESTORY THE ELEMENT FROM THE DOM OR JUST NOT SHOW IT?! THIS SEEMS WEIRD
+  }else{
+    this.render(
+      <div>
+        <Avatar
+          style={{width: '100px', height: '100px'}}
+          avatarStyle='Circle'
+          topType='LongHairMiaWallace'
+          accessoriesType='Prescription02'
+          hairColor='BrownDark'
+          facialHairType='Blank'
+          clotheType='Hoodie'
+          clotheColor='PastelBlue'
+          eyeType='Happy'
+          eyebrowType='Default'
+          mouthType='Smile'
+          skinColor='Light'
+        />
+      </div>
+    )
+  }
 };
 
 Web2Player.prototype.onExecute = function() {

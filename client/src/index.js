@@ -7,6 +7,8 @@ import "assets/vendor/font-awesome/css/font-awesome.min.css";
 import "assets/scss/argon-design-system-react.scss";
 
 import Index from "views/Index.jsx";
+// import Index from "views/Sandbox.jsx";
+
 import './index.css';
 
 import Backend from 'react-dnd-html5-backend'
