@@ -5,7 +5,8 @@ import Avatar from 'avataaars'
 function Web2Player() {
   this.addProperty("interval", 3000);
   this.addProperty("event", "tick");
-  this.addOutput("on_tick", -1);
+  this.addOutput("", -1);
+  this.horizontal = true;
   this.time = 0;
   this.last_interval = 3000;
   this.triggered = false;
@@ -83,7 +84,7 @@ Web2Player.prototype.onExecute = function() {
   if (this.inputs && this.inputs.length > 1 && this.inputs[1]) {
     this.setOutputData(1, true);
   }
-  this.outputs[0].label = this.last_interval.toString()+"ms"
+  // this.outputs[0].label = this.last_interval.toString()+"ms"
 };
 
 Web2Player.prototype.onGetInputs = function() {
