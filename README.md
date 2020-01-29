@@ -1,7 +1,10 @@
-# game3.js
-javascript game framework for web 3.0
-[Project Description]
-[Links To Know More About Web 3.0]
+game3.js [![Join the community on Spectrum](https://img.shields.io/badge/join%20the%20community-on%20spectrum-blue.svg?style=flat-square&colorB=3818E5)](https://spectrum.chat/game3-js)
+====
+#### Javascript game framework for web 3.0
+
+Introduction
+----
+**game3.js** allows you to create games using web 3.0 technologies and break free from centralized platforms. 
 
 ## Overview
 [![game3.js overview](https://docs.google.com/drawings/d/e/2PACX-1vRzF6Ws2C2BXrQAIcSi-XWQLYrgxnEQ2-Z1xCdN2MERA12LAdxllNVqNmRh4xdBSq6LRx2KX4M-7vWW/pub?w=960&amp;h=720)][overview]

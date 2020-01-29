@@ -63,6 +63,9 @@ class Index extends React.Component {
                         Web 2.0 platforms have changed the focus of video games: from delighting players, to monetizing their attention.
                       </p>
                       <p className="lead text-white">
+                        It doesn't need to be this way.
+                      </p>
+                      <p className="lead text-white">
                       Web 3.0 will help us break free from this unsustainable attention economy.
                       </p>
 
