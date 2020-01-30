@@ -56,8 +56,8 @@ class Index extends React.Component {
                   <Row className="row-grid align-items-center">
                     <Col lg="6">
                       <h1 className="display-3 text-white">
-                        The Web 3.0 Game Framework{" "}
-                        <span>Open-source & Decentralized</span>
+                        {"game3.js"}
+                        <span>The Web 3.0 Game Framework</span>
                       </h1>
                       <p className="lead text-white">
                         Web 2.0 platforms have changed how we design video games: from delighting our players, to monetizing their attention.

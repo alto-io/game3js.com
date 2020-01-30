@@ -12,7 +12,7 @@ import StackGrid from "react-stack-grid";
 
 import QrReader from "react-qr-reader";
 
-import Dragger from './Dragger.js';
+// import Dragger from './Dragger.js';
 import { useDrop } from 'react-dnd'
 
 import { Icon, Tooltip, Button, CardActions, Divider, Drawer, Card, CardMedia, CardContent, CardActionArea, Typography } from '@material-ui/core';
@@ -134,10 +134,10 @@ function App() {
    document.ontouchcancel = touchHandler
    */
 
-    document.addEventListener("touchstart", touchHandler, {passive: false});
-    document.addEventListener("touchmove", touchHandler, {passive: false});
-    document.addEventListener("touchend", touchHandler, {passive: false});
-    document.addEventListener("touchcancel", touchHandler, {passive: false});
+    // document.addEventListener("touchstart", touchHandler, {passive: false});
+    // document.addEventListener("touchmove", touchHandler, {passive: false});
+    // document.addEventListener("touchend", touchHandler, {passive: false});
+    // document.addEventListener("touchcancel", touchHandler, {passive: false});
 
     //console.log("ADDING KEY DOWN!!!",document.onkeydown)
     document.onkeydown = (keydown)=>{
@@ -624,6 +624,29 @@ if(!showVideoLibrary){
         }
 
 
+        // <Dragger key={"dragger"+n+"_"+i} name={item.title} drop={(name,x,y)=>{
+        //     //console.log("DO A DROP AT ",name,x,y)
+        //     setMenu("")
+        //     var node_watch = global.LiteGraphJS.LiteGraph.createNode(menu+"/"+item.title);
+        //     node_watch.pos = [x-40+global.graph.canvas.visible_area[0],y+global.graph.canvas.visible_area[1]];
+        //     //console.log("looking in",,liteGraph,liteGraph._is_subgraph)
+        //     global.graph.canvas.graph.add(node_watch);
+        //   }}>
+        //   <div onMouseUp={()=>{
+        //       if(menu){
+        //         setMenu("")
+        //         var node_watch = global.LiteGraphJS.LiteGraph.createNode(menu+"/"+item.title);
+        //         node_watch.pos = [width/2-40+global.graph.canvas.visible_area[0],height/2+global.graph.canvas.visible_area[1]];
+        //         //console.log("looking in",,liteGraph,liteGraph._is_subgraph)
+        //         global.graph.canvas.graph.add(node_watch);
+        //       }
+        //
+        //   }} style={style}>
+        //     {item.title}
+        //   </div>
+        // </Dragger>
+
+
         let items = []
         let itemspace = 40
         for(let i in global.customNodeItems[global.customNodes[n].name]){
@@ -631,27 +654,6 @@ if(!showVideoLibrary){
           //console.log("Add item",item)
           items.push([
             <div style={{...positionStyle,top:50+itemspace*i}}>
-            <Dragger key={"dragger"+n+"_"+i} name={item.title} drop={(name,x,y)=>{
-                //console.log("DO A DROP AT ",name,x,y)
-                setMenu("")
-                var node_watch = global.LiteGraphJS.LiteGraph.createNode(menu+"/"+item.title);
-                node_watch.pos = [x-40+global.graph.canvas.visible_area[0],y+global.graph.canvas.visible_area[1]];
-                //console.log("looking in",,liteGraph,liteGraph._is_subgraph)
-                global.graph.canvas.graph.add(node_watch);
-              }}>
-              <div onMouseUp={()=>{
-                  if(menu){
-                    setMenu("")
-                    var node_watch = global.LiteGraphJS.LiteGraph.createNode(menu+"/"+item.title);
-                    node_watch.pos = [width/2-40+global.graph.canvas.visible_area[0],height/2+global.graph.canvas.visible_area[1]];
-                    //console.log("looking in",,liteGraph,liteGraph._is_subgraph)
-                    global.graph.canvas.graph.add(node_watch);
-                  }
-
-              }} style={style}>
-                {item.title}
-              </div>
-            </Dragger>
             </div>
           ])
         }
