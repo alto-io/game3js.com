@@ -54,23 +54,20 @@ class Index extends React.Component {
               <Container className="py-lg-md d-flex">
                 <div className="col px-0">
                   <Row className="row-grid align-items-center">
-                    <Col lg="4">
+                    <Col lg="6">
                       <h1 className="display-3 text-white">
                         The Web 3.0 Game Framework{" "}
                         <span>Open-source & Decentralized</span>
                       </h1>
                       <p className="lead text-white">
-                        Web 2.0 platforms have changed the focus of video games: from delighting players, to monetizing their attention.
+                        Web 2.0 platforms have changed how we design video games: from delighting our players, to monetizing their attention.
                       </p>
                       <p className="lead text-white">
-                        It doesn't need to be this way.
-                      </p>
-                      <p className="lead text-white">
-                      Web 3.0 will help us break free from this unsustainable attention economy.
+                      Web 3.0 will help us break free from these coercive, centralized platforms.
                       </p>
 
                     </Col>
-                    <Col lg="8">
+                    <Col lg="6">
                       <EthBuild/>
                     </Col>
 

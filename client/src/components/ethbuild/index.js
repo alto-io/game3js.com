@@ -19,6 +19,7 @@ import { Icon, Tooltip, Button, CardActions, Divider, Drawer, Card, CardMedia, C
 import { makeStyles } from '@material-ui/core/styles';
 var codec = require('json-url')('lzw');
 var QRCode = require('qrcode.react')
+var web2GraphJson = require('./graphs/web2graph.json')
 
 const useStyles = makeStyles({
   card: {
@@ -376,6 +377,11 @@ React.useEffect(()=>{
       })
     }
   }
+
+  // load default
+
+  global.graph.configure( web2GraphJson );
+
   setInterval(()=>{
     //console.log(graph)
     graph.runStep()
@@ -1143,11 +1149,29 @@ if(readQr){
   )
 }
 
+// const downloadGraph = () => {
+//   var data = JSON.stringify( global.graph.serialize() );
+// 	var file = new Blob( [ data ] );
+// 	var url = URL.createObjectURL( file );
+// 	var element = document.createElement("a");
+// 	element.setAttribute('href', url);
+// 	element.setAttribute('download', "graph.JSON" );
+// 	element.style.display = 'none';
+// 	document.body.appendChild(element);
+// 	element.click();
+// 	document.body.removeChild(element);
+// 	setTimeout( function(){ URL.revokeObjectURL( url ); }, 1000*60 ); //wait one minute to revoke url
+// }
+//
+// const loadGraph = () => {
+//   global.graph.configure( web2GraphJson );
+// }
+
 return (
   <div className="App" style={{color:"#FFFFFF"}}>
 
     <div id="mainCanvas" style={{position:"relative",overflow:'hidden',background:"#222",width:'100%',height:"100%"}}>
-      <canvas id='main' width={Math.max(100,width)} height={Math.max(100,height)} tabIndex={10} style={{background:"#111111",outline: 'none',borderBottom:'1px solid #666666'}}></canvas>
+      <canvas id='main' width={Math.max(100,width)} height='850' tabIndex={10} style={{background:"#111111",outline: 'none',borderBottom:'1px solid #666666'}}></canvas>
       <div id="reactElements"></div>
     </div>
 
@@ -1228,181 +1252,3 @@ function useWindowSize() {
 
 
 export default App;
-
-// {qrReader}
-//
-// {extraMenus}
-//
-// <AboutDialog/>
-// <SaveDialog liteGraph={liteGraph}/>
-// <div style={{zIndex:1,position:"fixed",height:barHeight,left:0,bottom:0,width:"100%"}}>
-//   <div style={{borderRadius:"8px 8px 0px 0px",paddingLeft:6,margin:"auto",textAlign:"left",color:"#222222",height:barHeight,left:0,bottom:0,width:525,backgroundColor:"#DFDFDF"}}>
-//     <div style={{cursor:"pointer",letterSpacing:-5,fontSize:32, fontFamily: "'Rubik Mono One', sans-serif"}}>
-//
-//       <span style={{margin:5,borderRight:"1px solid #cccccc",height:barHeight}} onClick={()=>{
-//           liteGraphCanvas.switchLiveMode(true);
-//           setLive(!live)
-//           liteGraphCanvas.draw();
-//         }}>
-//         <Tooltip title={live?"Edit":"View"} style={{marginRight:10,cursor:"pointer"}}>
-//           <Icon>
-//             {live?"build":"visibility"}
-//           </Icon>
-//         </Tooltip>
-//       </span>
-//       <span style={{margin:5,borderRight:"1px solid #cccccc",height:barHeight}} onClick={()=>{
-//           //console.log(liteGraph.status,playing)//cccccc.status==2
-//           if(playing){
-//             liteGraph.start()
-//             setPlaying(false)
-//           }else{
-//             liteGraph.stop()
-//             setPlaying(true)
-//           }
-//         }}>
-//         <Tooltip title={playing?"Playing":"Fast Forwarding"} style={{marginRight:10,cursor:"pointer"}}>
-//           <Icon>
-//             {playing ? "play_circle_outline":"fast_forward"}
-//           </Icon>
-//         </Tooltip>
-//       </span>
-//
-//       <span onClick={()=>{setShowVideoLibrary(true);global.showLibrary=true;localStorage.setItem("eth.build.showLibrary",true);}}
-//         onTouchStart={()=>{setShowVideoLibrary(true);global.showLibrary=true;localStorage.setItem("eth.build.showLibrary",true);}}
-//       >
-//         <span style={{color:"#03a9f4"}}>eth</span>
-//         <span style={{position:'relative',left:-5,bottom:15,color:"#f44336",marginBottom:25}}>.</span>
-//         <span style={{position:'relative',left:-10,color:"#333"}}>build</span>
-//       </span>
-//
-//       <span style={{margin:5,borderLeft:"1px solid #cccccc",height:barHeight}} onClick={()=>{
-//           setOpenSaveDialog(true)
-//         }}>
-//         <Tooltip title="Save" style={{marginLeft:10,cursor:"pointer"}}>
-//           <Icon>
-//             save
-//           </Icon>
-//         </Tooltip>
-//       </span>
-//       <span style={{margin:5,borderLeft:"1px solid #cccccc",height:barHeight}} onClick={async ()=>{
-//           document.getElementById("loadjsonfile").click()
-//         }}>
-//         <Tooltip title="Load" style={{marginLeft:10,cursor:"pointer"}}>
-//           <Icon>
-//             open_in_browser
-//           </Icon>
-//         </Tooltip>
-//       </span>
-//       <span style={{margin:5,borderLeft:"1px solid #cccccc",height:barHeight}} onClick={async ()=>{
-//           setOpenAboutDialog(true)
-//         }}>
-//         <Tooltip title="About" style={{marginLeft:10,cursor:"pointer"}}>
-//           <Icon>
-//             info
-//           </Icon>
-//         </Tooltip>
-//       </span>
-//
-//       <span style={{margin:5,paddingLeft:10,borderLeft:"1px solid #cccccc",height:barHeight}} onClick={async ()=>{
-//           setReadQr(!readQr)
-//         }}>
-//         <Tooltip title="Scan" style={{marginLeft:10,cursor:"pointer"}}>
-//           <svg style={{width:24,height:24,opacity:0.95}} viewBox="0 0 24 24">
-//             <path fill="#000000" d="M4,4H10V10H4V4M20,4V10H14V4H20M14,15H16V13H14V11H16V13H18V11H20V13H18V15H20V18H18V20H16V18H13V20H11V16H14V15M16,15V18H18V15H16M4,20V14H10V20H4M6,6V8H8V6H6M16,6V8H18V6H16M6,16V18H8V16H6M4,11H6V13H4V11M9,11H13V15H11V13H9V11M11,6H13V10H11V6M2,2V6H0V2A2,2 0 0,1 2,0H6V2H2M22,0A2,2 0 0,1 24,2V6H22V2H18V0H22M2,18V22H6V24H2A2,2 0 0,1 0,22V18H2M22,22V18H24V22A2,2 0 0,1 22,24H18V22H22Z" />
-//           </svg>
-//         </Tooltip>
-//       </span>
-//
-//       <span style={{margin:5,borderLeft:"1px solid #cccccc",height:barHeight}} onClick={async ()=>{
-//           setShowVideoLibrary(true);global.showLibrary=true;localStorage.setItem("eth.build.showLibrary",true)
-//         }}>
-//         <Tooltip title="Learn More" style={{marginLeft:10,cursor:"pointer"}}>
-//           <Icon>
-//             swap_vert
-//           </Icon>
-//         </Tooltip>
-//       </span>
-//
-//     </div>
-//   </div>
-// </div>
-//
-//
-//
-//
-//
-// <div style={{position:'absolute',bottom:-100000,left:-100000}}>
-//   <span style={{border:'1px solid #777777',color:live?"#00ff00":"#0000ff",padding:5,cursor:"pointer"}}>
-//     <input id="loadjsonfile" type="file" name="file" onChange={(e)=>{
-//         console.log("FILE",e.target.files[0])
-//         var reader = new FileReader();
-//         reader.onload = (event) => {
-//           let compressedString = event.target.result
-//           //console.log("compressedString",compressedString)
-//           let loc = compressedString.indexOf("<string>")
-//           if(loc>0){
-//             loc += 8
-//             let endloc = compressedString.indexOf("</string>",loc)
-//             //console.log("loc",loc,"endloc",endloc)
-//             compressedString = compressedString.substr(loc,endloc-loc)
-//             compressedString = compressedString.substr(compressedString.lastIndexOf("/")+1)
-//           }
-//           console.log("decompress:",compressedString)
-//           codec.decompress(compressedString).then(json => {
-//             console.log("configure graph with:",json)
-//             if(json){
-//               localStorage.setItem("litegraph",JSON.stringify(json));
-//               liteGraph.configure( json );
-//             }
-//           })
-//         }
-//         try{
-//           reader.readAsText(e.target.files[0])
-//         }catch(e){console.log(e)}
-//       }}>
-//     </input>
-//   </span>
-// </div>
-//
-// <div style={{position:'absolute',bottom:-100000,left:-100000}}>
-//   <span style={{border:'1px solid #777777',color:live?"#00ff00":"#0000ff",padding:5,cursor:"pointer"}}>
-//     <input id="moduleloader" type="file" name="file" onChange={(e)=>{
-//         console.log("FILE",e.target.files[0])
-//         var reader = new FileReader();
-//         reader.onload = (event) => {
-//           let compressedString = event.target.result
-//
-//           /*
-//           let loc = compressedString.indexOf("<string>")
-//           if(loc>0){
-//             loc += 8
-//             let endloc = compressedString.indexOf("</string>",loc)
-//             compressedString = compressedString.substr(loc,endloc-loc)
-//             compressedString = compressedString.substr(compressedString.lastIndexOf("/")+1)
-//           }
-//           console.log("decompress:",compressedString)*/
-//
-//
-//             if(compressedString){
-//               let json = compressedString
-//               //  codec.decompress(compressedString).then(json => {
-//                   /////////
-//                   console.log("CLIP:",json)
-//                   localStorage.setItem("litegrapheditor_clipboard",json)
-//                   global.graph.canvas.last_mouse_position[0] = width/2
-//                   global.graph.canvas.last_mouse_position[1] = height/2
-//                   global.graph.canvas.pasteFromClipboard()
-//                   global.graph.canvas.setDirty(true);
-//                   global.graph.canvas.graph.change();
-//               //  })
-//
-//             }
-//
-//         }
-//         try{
-//           reader.readAsText(e.target.files[0])
-//         }catch(e){console.log(e)}
-//       }}>
-//     </input>
-//   </span>
-// </div>
