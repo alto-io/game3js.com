@@ -61,6 +61,19 @@ class DemoNavbar extends React.Component {
                   src={require("assets/img/brand/logo-white.png")}
                 />
               </NavbarBrand>
+              <Button
+                className="btn-neutral btn-icon"
+                color="default"
+                href="https://github.com/polats/game3.js"
+                target="_blank"
+              >
+                <span className="btn-inner--icon">
+                  <i className="fa fa-github mr-2" />
+                </span>
+                <span className="nav-link-inner--text ml-1">
+                  Github
+                </span>
+              </Button>
             </Container>
           </Navbar>
         </header>
