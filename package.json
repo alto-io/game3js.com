@@ -1,10 +1,9 @@
 {
-  "name": "js-ipfs-www",
-  "description": "JS IPFS website",
-  "version": "0.0.0",
-  "leadMaintainer": "Pedro Santos <pedro.santos@moxy.studio>",
+  "name": "game3.js",
+  "description": "Website for game3js.com",
+  "version": "0.0.1",
+  "leadMaintainer": "Paul Gadi <paul@outplay.games>",
   "keywords": [
-    "ipfs",
     "website",
     "www",
     "gatsby"

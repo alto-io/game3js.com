@@ -20,12 +20,12 @@
 
   "hero": {
     "welcomeMessage": {
-      "long": "A full P2P protocol written entirely in JavaScript",
-      "short": "A P2P JavaScript protocol"
+      "long": "A JavaScript Game Framework for Web 3.0",
+      "short": "A Web 3.0 Game Framework"
     },
     "textDescription": {
-      "long": "js-ipfs paves the way for the Browser implementation of the IPFS protocol. Written entirely in JavaScript, it runs in a Browser, a Service Worker, a Web Extension and Node.js, opening the door to a world of possibilities.",
-      "short": "js-ipfs runs in a Browser, a Service Worker, a Web Extension and Node.js, opening the door to a world of possibilities."
+      "long": "game3.js allows game developers to make use of Web 3.0 technologies and enables futuristic virtual ecosystems. Web 2.0 monopolies have controlled player identity, attention and data. We can take it back with the power of Web 3.0 and open-source.",
+      "short": "game3.js allows game developers to make use of Web 3.0 technologies and enables futuristic virtual ecosystems."
     },
     "currentVersion": {
       "long": "Current version: {version}",
@@ -152,7 +152,7 @@
   },
 
   "footer": {
-    "rightContent": "js-ipfs was started and is sponsored by",
-    "leftContent": "Protocol Labs | Except as noted, content licensed CC-BY 3.0"
+    "rightContent": "game3.js was started and is sponsored by",
+    "leftContent": "Outplay Games | Except as noted, content licensed CC-BY 3.0"
   }
 }

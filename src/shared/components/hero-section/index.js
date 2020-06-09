@@ -50,8 +50,13 @@ class Hero extends Component {
     return (
       <Observer onChange={ this.handleObserverChange }>
         <div className={ containerClasses }>
+
+      {
+        /*
           <NavBar />
           <LocalesBar className={ styles.localesBar } />
+          */
+      }
           <div className={ styles.orbitContainer }>
             <div className={ styles.orbits }>
               <div className={ styles.outsideRing } style={ this.outsideRingStyle } />
@@ -67,15 +72,23 @@ class Hero extends Component {
             </div>
             <h1 className={ styles.long }>{ messages.hero.welcomeMessage.long }</h1>
             <h1 className={ styles.short }>{ messages.hero.welcomeMessage.short }</h1>
+            { 
+            /*
             <ReactMarkdown className={ classNames(styles.textDesc, styles.long) } source={ messages.hero.textDescription.long } />
             <ReactMarkdown className={ classNames(styles.textDesc, styles.short) } source={ messages.hero.textDescription.short } />
             <div className={ infoContainerClasses }>
               { info && this.renderPkgInfo(info) }
             </div>
+            */
+            }
           </div>
+          { 
+          /*
           <AnimationToggle className={ styles.animationToggle }
             title={ messages.hero.animationButton[animationToggleText] }
             onToggleClick={ this.handleAnimationToggleClick }/>
+          */
+          }
         </div>
       </Observer>
     )

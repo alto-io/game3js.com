@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'JS IPFS'
+    title: 'Game3.js'
   },
   pathPrefix: '__GATSBY_IPFS_PATH_PREFIX__',
   plugins: [
@@ -41,12 +41,12 @@ module.exports = {
       resolve: 'gatsby-plugin-google-gtag',
       options: {
         trackingIds: [
-          'UA-96910779-5'
+          'UA-168900293-1'
         ],
         gtagConfig: {
           anonymize_ip: true,
           cookie_name: 'gaCookie',
-          cookie_domain: 'js.ipfs.io',
+          cookie_domain: 'game3js.com',
           cookie_expires: 0
         },
         pluginConfig: {
