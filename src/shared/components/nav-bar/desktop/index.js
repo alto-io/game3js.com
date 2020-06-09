@@ -18,17 +18,17 @@ class DesktopNavBar extends Component {
       <div className={ navBarClasses } >
         <div className={ styles.navBarMenu }>
           <div className={ styles.link } onClick={ this.handleGettingStartedClick }> { messages.navBar.item1 } </div>
-          <Link href="https://github.com/ipfs/js-ipfs/tree/master/examples#js-ipfs-examples-and-tutorials">
+          <Link>
             { messages.navBar.item2 }
           </Link>
-          <Link href="https://github.com/ipfs/js-ipfs/tree/master/docs/core-api">
+          <Link>
             { messages.navBar.item3 }
           </Link>
-          <Link href="https://github.com/ipfs/js-ipfs">
+          <Link>
             { messages.navBar.item4 }
           </Link>
           <div className={ styles.starContainer }>
-            <iframe title="desktop-github-stars" src="https://ghbtns.com/github-btn.html?user=ipfs&repo=js-ipfs&type=star&count=true" frameBorder="0" scrolling="0" sandbox="allow-scripts" />
+            <iframe title="desktop-github-stars" src="https://ghbtns.com/github-btn.html?user=polats&repo=game3.js&type=star&count=true" frameBorder="0" scrolling="0" sandbox="allow-scripts" />
           </div>
         </div>
       </div>

@@ -12,9 +12,9 @@
   },
 
   "navBar": {
-    "item1": "Get Started",
-    "item2": "Tutorials",
-    "item3": "API",
+    "item1": "Identity",
+    "item2": "Data",
+    "item3": "Ownership",
     "item4": "Open Source"
   },
 
@@ -24,8 +24,8 @@
       "short": "A Web 3.0 Game Framework"
     },
     "textDescription": {
-      "long": "game3.js allows game developers to make use of Web 3.0 technologies and create futuristic virtual ecosystems. Web 2.0 monopolies have controlled player identity, ownership and attention. We can take it back with the power of Web 3.0 and open-source.",
-      "short": "game3.js allows game developers to make use of Web 3.0 technologies and create futuristic virtual ecosystems."
+      "long": "game3.js allows game developers to make use of Web 3.0 technologies to create futuristic virtual ecosystems. Web 2.0 has centralized control of identity, data and ownership. We can take it back with the power of peer-to-peer and open-source.",
+      "short": "game3.js allows game developers to make use of Web 3.0 technologies to create futuristic virtual ecosystems."
     },
     "currentVersion": {
       "long": "Current version: {version}",

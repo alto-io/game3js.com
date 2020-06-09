@@ -52,8 +52,8 @@ class Hero extends Component {
         <div className={ containerClasses }>
 
       {
-        /*
           <NavBar />
+          /*
           <LocalesBar className={ styles.localesBar } />
           */
       }
