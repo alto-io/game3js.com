@@ -5,4 +5,4 @@ workflows:
   heroku_deploy:
     jobs:
       - heroku/deploy-via-git:
-          context: heroku-deploy
+          context: game3js-deploy
