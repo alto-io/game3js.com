@@ -72,10 +72,10 @@ class Hero extends Component {
             </div>
             <h1 className={ styles.long }>{ messages.hero.welcomeMessage.long }</h1>
             <h1 className={ styles.short }>{ messages.hero.welcomeMessage.short }</h1>
-            { 
-            /*
             <ReactMarkdown className={ classNames(styles.textDesc, styles.long) } source={ messages.hero.textDescription.long } />
             <ReactMarkdown className={ classNames(styles.textDesc, styles.short) } source={ messages.hero.textDescription.short } />
+            { 
+            /*
             <div className={ infoContainerClasses }>
               { info && this.renderPkgInfo(info) }
             </div>
