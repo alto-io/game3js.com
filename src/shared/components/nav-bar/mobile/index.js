@@ -45,8 +45,9 @@ class MobileNavBar extends Component {
           <li><div className={ styles.menuLink } onClick={ this.handleGettingStartedClick }> { messages.navBar.item1 } </div> </li>
           <li><Link className={ styles.menuLink } > { messages.navBar.item2 } </Link> </li>
           <li><Link className={ styles.menuLink } > { messages.navBar.item3 } </Link> </li>
+          <li><Link className={ styles.menuLink } > { messages.navBar.item4 } </Link> </li>
           <li className={ styles.githubContributers }>
-            <Link className={ styles.menuLink } > { messages.navBar.item4 } </Link>
+            <Link className={ styles.menuLink } > { messages.navBar.item5 } </Link>
             <iframe title="mobile-github-stars" src="https://ghbtns.com/github-btn.html?user=polats&repo=game3.js&type=star&count=true" frameBorder="0" scrolling="0" sandbox="allow-scripts" />
           </li>
         </ul>

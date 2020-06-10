@@ -31,9 +31,9 @@ class Layout extends Component {
       <IntlProvider locale={ intl.acronym } messages={ intl.messages }>
         <div className={ styles.app }>
           <Helmet
-            defaultTitle="JS IPFS"
+            defaultTitle="game3.js"
             meta={ [
-              { name: 'description', content: 'JS IPFS website' },
+              { name: 'description', content: 'game3.js Website' },
               { name: 'msapplication-TileColor', content: '#2f3951' },
               { name: 'theme-color', content: '#ffffff' }
             ] }

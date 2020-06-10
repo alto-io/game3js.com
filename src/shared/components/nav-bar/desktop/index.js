@@ -27,6 +27,9 @@ class DesktopNavBar extends Component {
           <Link>
             { messages.navBar.item4 }
           </Link>
+          <Link>
+            { messages.navBar.item5 }
+          </Link>
           <div className={ styles.starContainer }>
             <iframe title="desktop-github-stars" src="https://ghbtns.com/github-btn.html?user=polats&repo=game3.js&type=star&count=true" frameBorder="0" scrolling="0" sandbox="allow-scripts" />
           </div>
