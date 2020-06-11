@@ -98,6 +98,13 @@
     "usingGateway": "Przy użyciu bramki HTTP"
   },
 
+  "identity": {
+    "sectionTitle": "Identity",
+    "sectionDesc": "Social networks and app stores not only harvest our players' data but also trap them in closed ecosystems. Give our players back control of their accounts by using decentralized cryptographic signing tools such as Web3Modal.",
+    "usingWeb3Modal": "Using Web3Modal",
+    "output": "Output"
+  },
+
   "serviceWorker": {
     "sectionTitle": "Service Worker jako bramka",
     "sectionDesc": "Zmień tę stronę w pełni funkcjonalną bramkę IPFS bez zewnętrznego serwera, bez wysyłania zapytań HTTP. Właśnie tak, js-ipfs działający jako Service Worker jest w stanie pobierać dane bezpośrednio z IPFS!",

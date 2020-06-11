@@ -98,6 +98,13 @@
     "usingGateway": "HTTP Gatewayを使用"
   },
 
+  "identity": {
+    "sectionTitle": "Identity",
+    "sectionDesc": "Social networks and app stores not only harvest our players' data but also trap them in closed ecosystems. Give our players back control of their accounts by using decentralized cryptographic signing tools such as Web3Modal.",
+    "usingWeb3Modal": "Using Web3Modal",
+    "output": "Output"
+  },
+
   "serviceWorker": {
     "sectionTitle": "Service Workerゲートウェイ",
     "sectionDesc": "このページをIPFSネットワークからコンテンツを取得するためにサーバーに触れたり、HTTPを使用したりすることなく、完全なIPFSゲートウェイに変身させましょう! js-ipfs を搭載した Service Worker Gateway は IPFS ネットワークに直接接続できます。",

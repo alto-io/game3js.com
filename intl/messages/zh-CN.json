@@ -98,6 +98,13 @@
     "usingGateway": "使用HTTP网关"
   },
 
+  "identity": {
+    "sectionTitle": "Identity",
+    "sectionDesc": "Social networks and app stores not only harvest our players' data but also trap them in closed ecosystems. Give our players back control of their accounts by using decentralized cryptographic signing tools such as Web3Modal.",
+    "usingWeb3Modal": "Using Web3Modal",
+    "output": "Output"
+  },
+
   "serviceWorker": {
     "sectionTitle": "Service Worker网关",
     "sectionDesc": "无需借助任何服务器，也无需使用HTTP从IPFS网络获取内容即可将此页面转换为完整的IPFS网关！ 是的，你没看错，带有js-ipfs的Service Worker网关可以直接连接到IPFS网络。",

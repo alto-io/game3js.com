@@ -98,6 +98,13 @@
     "usingGateway": "HTTP 게이트웨이 사용하기"
   },
 
+  "identity": {
+    "sectionTitle": "Identity",
+    "sectionDesc": "Social networks and app stores not only harvest our players' data but also trap them in closed ecosystems. Give our players back control of their accounts by using decentralized cryptographic signing tools such as Web3Modal.",
+    "usingWeb3Modal": "Using Web3Modal",
+    "output": "Output"
+  },
+
   "serviceWorker": {
     "sectionTitle": "서비스 워커 게이트웨이",
     "sectionDesc": "이 페이지를 IPFS 게이트웨이로 전환하세요. 서버를 작동시키거나, HTTP를 사용하여 네트워크에서 콘텐츠를 가져오지 않아도 됩니다. 그래요! 서비스 워커 게이트웨이를 가진 js-ipfs가 IPFS 네트워크에 직접 연결됩니다.",

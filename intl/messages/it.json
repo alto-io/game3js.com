@@ -98,6 +98,13 @@
     "usingGateway": "Usando il Gateway HTTP"
   },
 
+  "identity": {
+    "sectionTitle": "Identity",
+    "sectionDesc": "Social networks and app stores not only harvest our players' data but also trap them in closed ecosystems. Give our players back control of their accounts by using decentralized cryptographic signing tools such as Web3Modal.",
+    "usingWeb3Modal": "Using Web3Modal",
+    "output": "Output"
+  },
+
   "serviceWorker": {
     "sectionTitle": "Service Worker Gateway",
     "sectionDesc": "Trasforma questa pagina in un gateway IPFS senza toccare alcun server o utilizzare HTTP per recuperare i contenuti dalla rete IPFS! Sì, avete letto bene, il Service Worker Gateway con js-ipfs può connettersi direttamente alla rete IPFS!",

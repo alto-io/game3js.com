@@ -98,6 +98,13 @@
     "usingGateway": "Používání brány HTTP"
   },
 
+  "identity": {
+    "sectionTitle": "Identity",
+    "sectionDesc": "Social networks and app stores not only harvest our players' data but also trap them in closed ecosystems. Give our players back control of their accounts by using decentralized cryptographic signing tools such as Web3Modal.",
+    "usingWeb3Modal": "Using Web3Modal",
+    "output": "Output"
+  },
+  
   "serviceWorker": {
     "sectionTitle": "Brána Service Workeru",
     "sectionDesc": "Proměňte tuto stránku v úplnou bránu IPFS, aniž byste se dotkli jakýchkoli serverů nebo pomocí protokolu HTTP načtěte obsah ze sítě IPFS! Ano, čtete to správně, služba Service Worker Gateway s js-ipfs se může připojit přímo k síti IPFS.",
