@@ -27,6 +27,28 @@ for await (const chunk of stream) {
 
 console.log(data)`
 
+const codeWeb3Modal = () => `import Web3Modal from "web3modal";
+
+class App extends React.Component<any, any> {
+  public web3Modal: Web3Modal;
+  
+  constructor(props: any) {
+    super(props);
+    this.web3Modal = new Web3Modal({
+      network: this.getNetwork(),
+      cacheProvider: true,
+      providerOptions: this.getProviderOptions(),
+      theme: "dark"
+    });
+  }
+
+  public onConnect = async () => {
+    const provider = await this.web3Modal.connect();
+  }
+}
+`
+
+
 function runCode (code, scope) {
   const entries = Object.entries(scope)
   // eslint-disable-next-line no-new-func
@@ -55,5 +77,6 @@ export {
   log,
   getIpfs,
   codeAdd,
-  codeGet
+  codeGet,
+  codeWeb3Modal
 }

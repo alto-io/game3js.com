@@ -17,7 +17,7 @@ class NavBar extends PureComponent {
   }
 
   componentDidMount () {
-    this.gettingStartedElement = document.getElementById('gsContainer')
+    this.gettingStartedElement = document.getElementById('idenContainer')
   }
 
   render () {
