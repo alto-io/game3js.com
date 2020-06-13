@@ -1,15 +1,20 @@
 import React from 'react'
-import { Editor } from 'react-live'
+import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
+
 import okaidia from './okaidia'
 
-export default function LiveEditor ({ code, onChange, ...rest }) {
+export default function LiveEditorComponent ({ code, onChange, ...rest }) {
   return (
-    <Editor
-      theme={ okaidia }
-      padding={ 15 }
-      { ...rest }
-      code={ code }
-      onChange={ onChange }
-    />
+    <LiveProvider>
+      <LiveEditor
+        theme={ okaidia }
+        padding={ 15 }
+        { ...rest }
+        code={ code }
+        noInline
+      />
+      <LivePreview/>
+      <LiveError/>
+    </LiveProvider>
   )
 }

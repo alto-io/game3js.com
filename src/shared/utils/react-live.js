@@ -27,26 +27,29 @@ for await (const chunk of stream) {
 
 console.log(data)`
 
-const codeWeb3Modal = () => `import Web3Modal from "web3modal";
+const codeWeb3Modal = () => `
+const Wrapper = ({ children }) => (
+  <div style={{
+    background: 'papayawhip',
+    width: '100%',
+    padding: '2rem'
+  }}>
+    {children}
+  </div>
+)
 
-class App extends React.Component<any, any> {
-  public web3Modal: Web3Modal;
-  
-  constructor(props: any) {
-    super(props);
-    this.web3Modal = new Web3Modal({
-      network: this.getNetwork(),
-      cacheProvider: true,
-      providerOptions: this.getProviderOptions(),
-      theme: "dark"
-    });
-  }
+const Title = () => (
+  <h3 style={{ color: 'palevioletred' }}>
+    Hello World!
+  </h3>
+)
 
-  public onConnect = async () => {
-    const provider = await this.web3Modal.connect();
-  }
-}
-`
+render(
+  <Wrapper>
+    <Title />
+  </Wrapper>
+)
+`.trim();
 
 
 function runCode (code, scope) {
