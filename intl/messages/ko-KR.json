@@ -105,6 +105,38 @@
     "output": "Output"
   },
 
+  "data": {
+    "sectionTitle": "Free our Data",
+    "sectionDesc": "The Internet has made our data the new oil. Yet, it's mainly the platforms that benefit from this resource, instead of the developers and players who actually generate the data. \n We can explore new ways to store and value data by using advanced decentralized protocols such as [IPFS](https://ipfs.io).",
+    "suggestion": {
+      "text": "Have suggestions?",
+      "linkText": "Share them here!"
+    }
+  },  
+
+  "ownership": {
+    "sectionTitle": "Our items, our rules",
+    "sectionDesc": "In today's virtual economies, a player's virtual items and achievements are not truly theirs to spend and share. This isn't a technological limitation -- it's a deliberate design choice. With Web 3.0, we can now create futuristic economies, where players earn virtual items that can be used and traded regardless of the game universe. We can use services to build these items similar to [Gitcoin's Kudos](https://gitcoin.co/kudos)",
+    "list": [
+      {
+        "title": "OPGames Kudos",
+        "desc": "Developers can create valuable and tradable badges to honor their core supporters."
+      },
+      {
+        "title": "Ether Gun",
+        "desc": "We can build our in-game items to be usable across game universes."
+      },
+      {
+        "title": "Take Back The Web Winner",
+        "desc": "We can reward players currencies and trophies to highlight their achievements even more."
+      },
+      {
+        "title": "Ethdenver Bufficorn",
+        "desc": "Or simply create items to be collected and shared on virtual showcases."
+      }    
+    ]
+  },  
+
   "serviceWorker": {
     "sectionTitle": "서비스 워커 게이트웨이",
     "sectionDesc": "이 페이지를 IPFS 게이트웨이로 전환하세요. 서버를 작동시키거나, HTTP를 사용하여 네트워크에서 콘텐츠를 가져오지 않아도 됩니다. 그래요! 서비스 워커 게이트웨이를 가진 js-ipfs가 IPFS 네트워크에 직접 연결됩니다.",

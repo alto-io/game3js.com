@@ -4,8 +4,8 @@ import ScreenSizeProvider from 'shared/components/screen-size-provider'
 import Hero from 'shared/components/hero-section'
 import Identity from 'shared/components/identity-section'
 import Data from 'shared/components/data-section'
+import Ownership from 'shared/components/ownership-section'
 /*
-import Features from 'shared/components/features-section'
 import GettingStarted from 'shared/components/getting-started-section'
 import WhatYouCanBuild from 'shared/components/what-you-can-build-section'
 import WhatArePeopleBuilding from 'shared/components/what-are-people-building-section'
@@ -20,9 +20,9 @@ const Home = () => (
       <Hero />
       <Identity />
       <Data />
+      <Ownership />
       { 
       /*
-      <Features />
       <GettingStarted />
       <Gateway />
       <WhatArePeopleBuilding />

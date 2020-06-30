@@ -15,8 +15,8 @@
     "item1": "Identity",
     "item2": "Data",
     "item3": "Ownership",
-    "item4": "Peer-to-Peer",
-    "item5": "Open Source"
+    "item4": "Open-Source",
+    "item5": "Platform Co-op"
   },
 
   "hero": {
@@ -25,7 +25,7 @@
       "short": "A Web 3.0 Game Framework"
     },
     "textDescription": {
-      "long": "game3.js allows game developers to make use of Web 3.0 technologies to create futuristic virtual ecosystems. Web 2.0 has centralized control of identity, data and ownership. We can take it back with the power of peer-to-peer and open-source.",
+      "long": "game3.js allows game developers to make use of Web 3.0 technologies to create futuristic virtual ecosystems. Web 2.0 has centralized control of identity, data and ownership. We can take it back by blending two powerful movements: open-source and platform co-ops.",
       "short": "game3.js allows game developers to make use of Web 3.0 technologies to create futuristic virtual ecosystems."
     },
     "currentVersion": {
@@ -100,19 +100,42 @@
   },
 
   "identity": {
-    "sectionTitle": "Identity",
-    "sectionDesc": "Social networks and app stores not only harvest our players' attention, they also trap them in closed ecosystems. Give our players back control of their accounts by using decentralized cryptographic signing tools such as [Web3Modal](https://github.com/Web3Modal/web3modal).",
+    "sectionTitle": "Take back our identity",
+    "sectionDesc": "Using social network or app store logins to manage user identity might seem convenient, but they trap developers and players in closed ecosystems. Give our players back control of their accounts by using decentralized cryptographic signing tools such as [Web3Modal](https://github.com/Web3Modal/web3modal).",
     "usingWeb3Modal": "Using Web3Modal",
     "output": "Output"
   },
 
   "data": {
-    "sectionTitle": "Data",
-    "sectionDesc": "In virtual economies, data is the new oil. Yet, it's the platforms that benefit from this resource, instead of the players who actually generate the data. \n We can explore new ways to design data ownership by using advanced peer-to-peer protocols such as [IPFS](https://ipfs.io).",
+    "sectionTitle": "Free our Data",
+    "sectionDesc": "The Internet has made our data the new oil. Yet, it's mainly the platforms that benefit from this resource, instead of the developers and players who actually generate the data. \n We can explore new ways to store and value data by using advanced decentralized protocols such as [IPFS](https://ipfs.io).",
     "suggestion": {
       "text": "Have suggestions?",
       "linkText": "Share them here!"
     }
+  },  
+
+  "ownership": {
+    "sectionTitle": "Our items, our rules",
+    "sectionDesc": "In today's virtual economies, a player's virtual items and achievements are not truly theirs to spend and share. This isn't a technological limitation -- it's a deliberate design choice. With Web 3.0, we can now create futuristic economies, where players earn virtual items that can be used and traded regardless of the game universe. We can use services to build these items similar to [Gitcoin's Kudos](https://gitcoin.co/kudos)",
+    "list": [
+      {
+        "title": "OPGames Kudos",
+        "desc": "Developers can create valuable and tradable badges to honor their core supporters."
+      },
+      {
+        "title": "Ether Gun",
+        "desc": "We can build our in-game items to be usable across game universes."
+      },
+      {
+        "title": "Take Back The Web Winner",
+        "desc": "We can reward players currencies and trophies to highlight their achievements even more."
+      },
+      {
+        "title": "Ethdenver Bufficorn",
+        "desc": "Or simply create items to be collected and shared on virtual showcases."
+      }    
+    ]
   },  
 
   "serviceWorker": {

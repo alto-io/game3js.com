@@ -105,6 +105,38 @@
     "output": "Output"
   },
   
+  "data": {
+    "sectionTitle": "Free our Data",
+    "sectionDesc": "The Internet has made our data the new oil. Yet, it's mainly the platforms that benefit from this resource, instead of the developers and players who actually generate the data. \n We can explore new ways to store and value data by using advanced decentralized protocols such as [IPFS](https://ipfs.io).",
+    "suggestion": {
+      "text": "Have suggestions?",
+      "linkText": "Share them here!"
+    }
+  },  
+
+  "ownership": {
+    "sectionTitle": "Our items, our rules",
+    "sectionDesc": "In today's virtual economies, a player's virtual items and achievements are not truly theirs to spend and share. This isn't a technological limitation -- it's a deliberate design choice. With Web 3.0, we can now create futuristic economies, where players earn virtual items that can be used and traded regardless of the game universe. We can use services to build these items similar to [Gitcoin's Kudos](https://gitcoin.co/kudos)",
+    "list": [
+      {
+        "title": "OPGames Kudos",
+        "desc": "Developers can create valuable and tradable badges to honor their core supporters."
+      },
+      {
+        "title": "Ether Gun",
+        "desc": "We can build our in-game items to be usable across game universes."
+      },
+      {
+        "title": "Take Back The Web Winner",
+        "desc": "We can reward players currencies and trophies to highlight their achievements even more."
+      },
+      {
+        "title": "Ethdenver Bufficorn",
+        "desc": "Or simply create items to be collected and shared on virtual showcases."
+      }    
+    ]
+  },  
+
   "serviceWorker": {
     "sectionTitle": "Brána Service Workeru",
     "sectionDesc": "Proměňte tuto stránku v úplnou bránu IPFS, aniž byste se dotkli jakýchkoli serverů nebo pomocí protokolu HTTP načtěte obsah ze sítě IPFS! Ano, čtete to správně, služba Service Worker Gateway s js-ipfs se může připojit přímo k síti IPFS.",
