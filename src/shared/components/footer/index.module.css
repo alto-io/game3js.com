@@ -7,7 +7,7 @@
   z-index: 3;
   display: flex;
   justify-content: center;
-  background: var(--color-dark-blue);
+  background: var(--color-op-dark-blue);
   color: var(--color-text-footer);
   font-size: 13px;
 

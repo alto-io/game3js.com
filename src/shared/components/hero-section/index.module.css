@@ -18,8 +18,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--color-dark-blue);
-  color: var(--color-white);
+  background: var(--color-op-white);
+  color: var(--color-black);
 
   & .animationToggle {
     position: absolute;
@@ -69,15 +69,15 @@
       }
 
       & .outsideRing {
-        animation: orbit 300s infinite linear;
+        animation: orbit 75s infinite linear;
       }
 
       & .middleRing {
-        animation: orbit 200s infinite linear;
+        animation: orbit 50s infinite linear;
       }
 
       & .insideRing {
-        animation: orbit 120s infinite linear;
+        animation: orbit 30s infinite linear;
       }
 
     }

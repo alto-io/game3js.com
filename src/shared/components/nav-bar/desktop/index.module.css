@@ -12,7 +12,7 @@
   height: var(--nav-bar-desktop-height);
   padding: 20px 0;
   display: flex;
-  background: var(--color-menu-dark-blue);
+  background: var(--color-op-dark-blue);
   font-size: var(--typography-menu-text-size);
   text-align: center;
 

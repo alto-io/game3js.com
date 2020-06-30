@@ -20,7 +20,7 @@
   --color-syntax-highlighter-background: #122147;
   --color-accordion-buttons: #17264d;
   --color-hex-svg-fill: #c6c9e2;
-  --color-text-footer: #aab2b9;
+  --color-text-footer: #f5f6fd;
   --color-blue-dark-shade: #757b8f;
   --color-twitter: #3b559a;
   --color-twitter-hover: #3c5ae8;
@@ -28,6 +28,15 @@
   --color-github-hover: #1130bc;
   --color-error: #ea5037;
 
+
+  --color-op-yellow: #ffb600;
+  --color-op-pink: #ff007b;
+  --color-op-purple: #af5eff;
+  --color-op-dark-blue: #0093d5;
+  --color-op-light-blue: #a1dbe7;
+  --color-op-green: #06df9b;
+  --color-op-white: #f7f6fb;
+  
   --color-menu-dark-blue-opacity: rgba(14, 32, 76, 0.9);
   --color-dark-blue-opacity: rgba(11, 22, 50, 0.9);
 }
