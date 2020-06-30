@@ -16,7 +16,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--color-op);
+  background: var(--color-dark-blue);
+  color: var(--color-white);
 
   & .content {
     width: 100%;
@@ -113,12 +114,12 @@
 
       & > a {
         margin-left: 5px;
-        color: var(--color-op-purple);
+        color: var(--color-yellow);
         text-decoration: none;
         transition: color var(--transition-default-duration) ease;
 
         &:hover {
-          color: var(--color-op-pink);
+          color: var(--color-yellow-hover);
         }
       }
     }

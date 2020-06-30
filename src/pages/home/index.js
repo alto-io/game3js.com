@@ -3,6 +3,7 @@ import React from 'react'
 import ScreenSizeProvider from 'shared/components/screen-size-provider'
 import Hero from 'shared/components/hero-section'
 import Identity from 'shared/components/identity-section'
+import Data from 'shared/components/data-section'
 /*
 import Features from 'shared/components/features-section'
 import GettingStarted from 'shared/components/getting-started-section'
@@ -18,6 +19,7 @@ const Home = () => (
     <ScreenSizeProvider>
       <Hero />
       <Identity />
+      <Data />
       { 
       /*
       <Features />
