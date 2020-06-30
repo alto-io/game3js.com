@@ -6,7 +6,7 @@ import Observer from '@researchgate/react-intersection-observer'
 import Link from 'shared/components/link'
 
 import NavPill from 'shared/components/nav-pill'
-import appsData from 'shared/data/what-you-can-build'
+import appsData from 'shared/data/data-apps'
 import HorizontalScroller from 'shared/components/horizontal-scroller'
 import styles from './index.module.css'
 
@@ -28,16 +28,20 @@ class Data extends PureComponent {
           <div className={ styles.content }>
             <h1>{ messages.data.sectionTitle }</h1>
             <ReactMarkdown className={ styles.sectionDescription } source={ messages.data.sectionDesc } />
+            {/*
             <HorizontalScroller className={ styles.horizontalScroller }>
               { this.renderNavPills() }
             </HorizontalScroller>
+            */}
             { isVisible && this.renderIframeContainer(isIframeLoaded, activeLink) }
+            {/*
             <p>
               { messages.whatYouCanBuild.suggestion.text }
               <Link href={ appsData.repoLink } >
                 { messages.whatYouCanBuild.suggestion.linkText }
               </Link>
             </p>
+            */}
           </div>
         </div>
       </Observer>

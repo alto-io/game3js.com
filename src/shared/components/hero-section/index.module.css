@@ -19,7 +19,7 @@
   justify-content: center;
   align-items: center;
   background: var(--color-op-white);
-  color: var(--color-black);
+  color: var(--color-dark-blue);
 
   & .animationToggle {
     position: absolute;
@@ -69,15 +69,15 @@
       }
 
       & .outsideRing {
-        animation: orbit 75s infinite linear;
+        animation: orbit 30s infinite linear;
       }
 
       & .middleRing {
-        animation: orbit 50s infinite linear;
+        animation: orbit 25s infinite linear;
       }
 
       & .insideRing {
-        animation: orbit 30s infinite linear;
+        animation: orbit 15s infinite linear;
       }
 
     }
