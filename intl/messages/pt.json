@@ -192,5 +192,39 @@
   "footer": {
     "rightContent": "js-ipfs foi iniciado e é patrocinado por",
     "leftContent": "Protocol Labs | Exceto conforme indicado, conteúdo sob a licença CC-BY 3.0"
-  }
+  },  
+
+  "opensource": {
+    "sectionTitle": "Stand on the shoulder of giants",
+    "sectionDesc": "Game developers have been accustomed to monolithic game engines like Unity and Unreal, but these platforms are also captive ecosystems themselves. By building open-source Javascript browser-based games, game developers and players have the whole gamut of groundbreaking new web technologies to experiment with.",
+    "list": [
+      {
+        "title": "[Babylon.js](https://www.babylonjs.com/)",
+        "desc": "A sophisticated and powerful 3d game engine."
+      },
+      {
+        "title": "[Phaser](https://phaser.io/)",
+        "desc": "Optimized for 2d games and easy to learn, with a huge developer community."
+      },
+      {
+        "title": "[Colyseus](https://colyseus.io/)",
+        "desc": "Node.js multiplayer server, plugs in to a vibrant Javascript ecosystem."
+      }
+    ]
+  },
+
+  "platformcoop": {
+    "sectionTitle": "Build on co-op principles",
+    "sectionDesc": "Co-op is not only a way to play games together, it's also a paradigm shift. For the past decade, developers have been accustomed to building according to the platforms' whims: needing to scale to millions of users and rely on ad or in-app revenue. Platform cooperativism entreats us to question the economics of a platform -- is it sustainable to scale infinitely? Or is there a way to design a more sustainable ecosystem, where we treat our players as owners and give them the power of governance?",
+    "list": [
+      {
+        "title": "[Ours To Hack and To Own](https://www.amazon.com/Ours-Hack-Own-Platform-Cooperativism/dp/1944869336/)",
+        "desc": "A reference with concrete examples of how we can build alternative ecosystems to platform monopolies."
+      },
+      {
+        "title": "[The Metagovernance Project](http://metagov.org/)",
+        "desc": "A set of tools and research on how to build player-owned governance on virtual worlds."
+      }
+    ]
+  }  
 }

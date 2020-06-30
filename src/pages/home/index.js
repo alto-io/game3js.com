@@ -5,6 +5,8 @@ import Hero from 'shared/components/hero-section'
 import Identity from 'shared/components/identity-section'
 import Data from 'shared/components/data-section'
 import Ownership from 'shared/components/ownership-section'
+import OpenSource from 'shared/components/open-source-section'
+import PlatformCoop from 'shared/components/platform-coop-section'
 /*
 import GettingStarted from 'shared/components/getting-started-section'
 import WhatYouCanBuild from 'shared/components/what-you-can-build-section'
@@ -21,6 +23,8 @@ const Home = () => (
       <Identity />
       <Data />
       <Ownership />
+      <OpenSource />
+      <PlatformCoop />
       { 
       /*
       <GettingStarted />

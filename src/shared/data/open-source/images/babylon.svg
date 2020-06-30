@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 444 385"
+   version="1.1"
+   sodipodi:docname="babylon.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata29">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1252"
+     inkscape:window-height="796"
+     id="namedview27"
+     showgrid="false"
+     inkscape:zoom="0.61298701"
+     inkscape:cx="222"
+     inkscape:cy="192.5"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Layer_1" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#fff;}.cls-2{fill:#e0684b;}.cls-3{fill:#bb464b;}.cls-4{fill:#e0ded8;}.cls-5{fill:#d5d2ca;}</style>
+  </defs>
+  <title
+     id="title6">babylon_logo_color</title>
+  <path
+     class="cls-1"
+     d="M 220.2237,2.8333084 55.624007,97.806082 V 287.91487 L 220.2237,382.99152 384.82339,288.01875 V 97.850601 Z"
+     id="path8"
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;stroke-width:1" />
+  <polygon
+     class="cls-2"
+     points="299.22,148.14 332.62,128.85 297.9,108.81 264.5,128.09 "
+     id="polygon10"
+     transform="matrix(1.4839496,0,0,1.4839496,-108.76793,-93.356305)"
+     style="fill:#e0684b;stroke-width:0.67387736" />
+  <polygon
+     class="cls-2"
+     points="110.78,128.85 144.18,148.14 255.09,84.1 221.7,64.81 "
+     id="polygon12"
+     transform="matrix(1.4839496,0,0,1.4839496,-108.76793,-93.356305)"
+     style="fill:#e0684b;stroke-width:0.67387736" />
+  <polygon
+     class="cls-2"
+     points="221.7,192.89 186.98,212.94 221.7,232.98 256.41,212.94 "
+     id="polygon14"
+     transform="matrix(1.4839496,0,0,1.4839496,-108.76793,-93.356305)"
+     style="fill:#e0684b;stroke-width:0.67387736" />
+  <polygon
+     class="cls-3"
+     points="144.18,237.65 144.18,148.14 110.78,128.85 110.78,256.93 221.7,320.97 332.62,256.93 332.62,128.85 299.22,148.14 299.22,237.65 221.7,282.41 "
+     id="polygon16"
+     transform="matrix(1.4839496,0,0,1.4839496,-108.76793,-93.356305)"
+     style="fill:#bb464b;stroke-width:0.67387736" />
+  <polygon
+     class="cls-3"
+     points="221.7,192.89 256.41,212.94 256.41,172.85 221.7,152.81 186.98,172.85 186.98,212.94 "
+     id="polygon18"
+     transform="matrix(1.4839496,0,0,1.4839496,-108.76793,-93.356305)"
+     style="fill:#bb464b;stroke-width:0.67387736" />
+  <polygon
+     class="cls-4"
+     points="221.7,232.98 221.7,282.41 299.22,237.65 299.22,148.14 256.41,172.85 256.41,212.94 "
+     id="polygon20"
+     transform="matrix(1.4839496,0,0,1.4839496,-108.76793,-93.356305)"
+     style="fill:#e0ded8;stroke-width:0.67387736" />
+  <polygon
+     class="cls-5"
+     points="221.7,232.98 221.7,282.41 144.18,237.65 144.18,148.14 186.98,172.85 186.98,212.94 "
+     id="polygon22"
+     transform="matrix(1.4839496,0,0,1.4839496,-108.76793,-93.356305)"
+     style="fill:#d5d2ca;stroke-width:0.67387736" />
+  <polygon
+     class="cls-1"
+     points="299.22,148.14 256.41,172.85 221.7,152.81 186.98,172.85 144.18,148.14 255.09,84.1 297.9,108.81 264.5,128.09 "
+     id="polygon24"
+     transform="matrix(1.4839496,0,0,1.4839496,-108.76793,-93.356305)"
+     style="fill:#ffffff;stroke-width:0.67387736" />
+</svg>
