@@ -1,4 +1,4 @@
-game3.js [![Join the community on Spectrum](https://img.shields.io/badge/join%20the%20community-on%20spectrum-blue.svg?style=flat-square&colorB=3818E5)](https://spectrum.chat/game3-js)
+game3.js [![Join the community on Gitter](https://img.shields.io/gitter/room/alto-io/game3-js?style=for-the-badge)](https://gitter.im/game3-js/community)
 ====
 #### Javascript game framework for web 3.0
 
