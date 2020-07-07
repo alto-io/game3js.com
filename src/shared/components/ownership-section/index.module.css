@@ -55,7 +55,7 @@
 
 @media (--layout-lte-medium) {
   .container .content .featuresContainer .featuresItem {
-    width: calc(33.3% - 25px);
+    width: calc(50% - 15px);
   }
 }
 

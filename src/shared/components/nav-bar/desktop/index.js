@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 
 import Link from 'shared/components/link'
 import styles from './index.module.css'
+import GitHubButton from 'react-github-btn'
 
 class DesktopNavBar extends Component {
   render () {
@@ -31,8 +32,8 @@ class DesktopNavBar extends Component {
             { messages.navBar.item5 }
           </Link>
           <div className={ styles.starContainer }>
-            <iframe title="desktop-github-stars" src="https://ghbtns.com/github-btn.html?user=polats&repo=game3.js&type=star&count=true" frameBorder="0" scrolling="0" sandbox="allow-scripts" />
-          </div>
+            <GitHubButton href="https://github.com/alto-io/game3.js" data-size="large" aria-label="Star alto-io/game3.js on GitHub">Star</GitHubButton>
+        </div>
         </div>
       </div>
     )
